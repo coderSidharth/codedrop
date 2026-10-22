@@ -1,84 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0d10">
+    <title>New snippet · CodeDrop</title>
+    <link rel="icon" type="image/png" href="/imgs/code-pngrepo-com.png">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="https://kit.fontawesome.com/224143ea2d.js" crossorigin="anonymous"></script>
-    <script src="/js/myScript.js"></script>
-    <title>Share your code!</title>
-    <link rel="icon" type="image/png" href="/imgs/code-pngrepo-com.png">
+    <script src="/js/myScript.js" defer></script>
 </head>
-
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">Sharing <img src="/imgs/code-pngrepo-com.png" alt="" style="height: 1em;"> Codes</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav mr-auto">
-            <li><a class="nav-link" href="/code/latest">Recent codes</a></li>
-            <li><a class="nav-link" href="/code/usage">Usage</a></li>
-            <li><a class="nav-link" href="/code/about">About</a></li>
-        </ul>
-        <span class="navbar-text">
-                <a href="https://github.com/nuromirzak/sharing-codes" target="_blank">
-                    <i class="fa-brands fa-github fa-2xl" style="color: black"></i>
-                </a>
-            </span>
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a class="brand" href="/"><span class="brand-mark">&lt;/&gt;</span><span>code<span class="brand-accent">drop</span></span></a>
+        <div class="nav-links"><a class="active" href="/">New snippet</a><a href="/code/latest">Explore</a><a href="/code/about">About</a></div>
+        <a class="nav-cta" href="/code/latest">Browse snippets <span>↗</span></a>
     </div>
 </nav>
 
-<div class="container p-3">
-    <form action="" onsubmit="send()">
-        <div class="form-group">
-            <label for="code_snippet"><h1>Share your code here!</h1></label>
-            <div class="alert alert-success success-message" role="alert" style="display: none;">
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Your UUID code is <span id="uuid">a947b880-3848-4e69-9255-4d8c6c2b8354</span>. Don't lose it, it's very important!</p>
-                <a id="uuid-link" href="#">Go to the code page</a>
-            </div>
-            <div class="alert alert-danger danger-message" role="alert" style="display: none;">
-                <h4 class="alert-heading">Oops!...</h4>
-                <p></p>
-                <p>Please check that you have entered the correct data. The views and times field can only accept integers. For more information, click <a href="/code/usage">here.</a></p>
-            </div>
-            <textarea class="form-control my-3" id="code_snippet" placeholder="// Enter here..." required></textarea>
-            <div class="row">
-                <div class="col">
-                    <label for="views_restriction">A limit on the number of views</label>
-                    <input type="text" class="form-control" id="views_restriction" placeholder="Enter a limit on the number of views" value="0">
-                    <small class="form-text text-muted">This will allow viewing the snippet only a certain number of times, after which the snippet is deleted from the database.</small>
-                </div>
-                <div class="col">
-                    <label for="time_restriction">A limit on the viewing time</label>
-                    <input type="text" class="form-control" id="time_restriction" placeholder="Enter a limit on the viewing time" value="0">
-                    <small class="form-text text-muted">This will allow viewing a code snippet for a certain period of time, and after its expiration, the code snippet is deleted from the database.</small>
-                </div>
-            </div>
-            <p></p>
-            <button id="send_snippet" type="submit" class="btn btn-primary">Submit</button>
-            <button id="set_password" type="button" class="btn btn-outline-primary" data-toggle="collapse" href="#collapsePassword" role="button" aria-expanded="false" aria-controls="collapsePassword">Set password</button>
-            <p></p>
-            <div class="collapse" id="collapsePassword">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
-                    </div>
-                    <input type="text" class="form-control" id="password_field" aria-label="Password input" aria-describedby="inputGroup-sizing-default">
-                </div>
-            </div>
+<main class="page-shell editor-page">
+    <section class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> A little space for your code</div>
+        <h1>Share code.<br><span>Keep it simple.</span></h1>
+        <p>Drop in a snippet, set its lifetime, and send a link. No account needed.</p>
+    </section>
+
+    <section class="editor-card">
+        <div class="editor-heading">
+            <div><span class="section-kicker">NEW SNIPPET</span><h2>Start writing</h2></div>
+            <span class="private-chip"><span></span> Private by default</span>
         </div>
-    </form>
-</div>
+        <form id="snippet-form" onsubmit="send(event)">
+            <div class="code-editor">
+                <div class="editor-toolbar"><div class="window-dots"><i></i><i></i><i></i></div><span>snippet.code</span><button type="button" class="text-button" id="clear-code">Clear</button></div>
+                <textarea id="code_snippet" name="code" placeholder="// Your next great idea starts here…" required spellcheck="false" aria-label="Code snippet"></textarea>
+                <div class="editor-footer"><span>Plain text · syntax preserved</span><span id="code-count">0 characters · 0 lines</span></div>
+            </div>
 
+            <div class="settings-grid">
+                <div class="setting-card"><div class="setting-icon">◷</div><div class="setting-content"><label for="time_restriction">Expire after</label><p>Snippet lifetime in seconds. 0 means forever.</p><div class="input-wrap"><input type="number" min="0" step="1" id="time_restriction" value="0"><span>seconds</span></div></div></div>
+                <div class="setting-card"><div class="setting-icon">#</div><div class="setting-content"><label for="views_restriction">View limit</label><p>Delete after this many views. 0 means unlimited.</p><div class="input-wrap"><input type="number" min="0" step="1" id="views_restriction" value="0"><span>views</span></div></div></div>
+            </div>
 
-<script src="/js/jquery.slim.min.js"></script>
-<script src="/js/bootstrap.bundle.min.js"></script>
+            <div class="password-row">
+                <div class="password-title"><span class="lock-icon">⌑</span><div><label for="password_field">Add a password <span class="optional">optional</span></label><p>Only people with the password can open your snippet.</p></div></div>
+                <div class="password-controls"><input type="password" id="password_field" placeholder="Create a password" autocomplete="new-password"><button type="button" class="icon-button" id="toggle-password" aria-label="Show password">Show</button><button type="button" class="icon-button" id="generate-password">Generate</button></div>
+            </div>
+
+            <div class="alert alert-success success-message" role="status" style="display:none"><div class="success-title">Your snippet is ready</div><p>Save this link to get back to it.</p><div class="share-link"><a id="uuid-link" href="#"></a><button type="button" id="copy-link">Copy link</button></div></div>
+            <div class="alert alert-danger danger-message" role="alert" style="display:none"><span class="error-text">Something went wrong. Please try again.</span></div>
+            <div class="form-actions"><span class="form-hint"><span class="shield-icon">◆</span> No account. No clutter. Just code.</span><button id="send_snippet" type="submit" class="primary-button">Create snippet <span>→</span></button></div>
+        </form>
+    </section>
+    <footer class="site-footer"><span>© CodeDrop</span><span>Made for the moments you need to share.</span><a href="/code/usage">How it works</a></footer>
+</main>
 </body>
-
 </html>

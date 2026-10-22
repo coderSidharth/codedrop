@@ -41,3 +41,5 @@ out/
 
 ### macOS files ###
 .DS_Store
+# Local Java toolchain used to run the project
+.tools/

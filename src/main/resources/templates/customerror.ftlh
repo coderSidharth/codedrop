@@ -9,29 +9,12 @@
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/224143ea2d.js" crossorigin="anonymous"></script>
     <script src="/js/myScript.js"></script>
-    <title>Share your code!</title>
+    <title>CodeDrop · Share your code!</title>
     <link rel="icon" type="image/png" href="/imgs/code-pngrepo-com.png">
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">Sharing <img src="/imgs/code-pngrepo-com.png" alt="" style="height: 1em;"> Codes</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav mr-auto">
-            <li><a class="nav-link" href="/code/latest">Recent codes</a></li>
-            <li><a class="nav-link" href="/code/usage">Usage</a></li>
-            <li><a class="nav-link" href="/code/about">About</a></li>
-        </ul>
-        <span class="navbar-text">
-                <a href="https://github.com/nuromirzak/sharing-codes" target="_blank">
-                    <i class="fa-brands fa-github fa-2xl" style="color: black"></i>
-                </a>
-            </span>
-    </div>
-</nav>
+<nav class="site-nav"><div class="nav-inner"><a class="brand" href="/"><span class="brand-mark">&lt;/&gt;</span><span>code<span class="brand-accent">drop</span></span></a><div class="nav-links"><a href="/">New snippet</a><a href="/code/latest">Explore</a><a href="/code/about">About</a></div><a class="nav-cta" href="/code/usage">How it works <span>↗</span></a></div></nav>
 
 <div class="container p-3">
     <h1 class="display-6">Error</h1>
