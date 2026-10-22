@@ -29,23 +29,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/nuromirzak/sharing-codes">
+  <a href="https://github.com/coderSidharth/codedrop">
     <img src="readme-images/code-pngrepo-com.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">A code sharing platform</h3>
+<h3 align="center">CodeDrop · a clean, minimal code sharing platform</h3>
 
   <p align="center">
     Code Sharing Platform is a graduate project for track Java Backend Developer. 
     <br />
-    <a href="https://github.com/nuromirzak/sharing-codes"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/coderSidharth/codedrop"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/nuromirzak/sharing-codes">View Demo</a>
+    <a href="https://github.com/coderSidharth/codedrop">View Project</a>
     ·
-    <a href="https://github.com/nuromirzak/sharing-codes/issues">Report Bug</a>
+    <a href="https://github.com/coderSidharth/codedrop/issues">Report Bug</a>
     ·
-    <a href="https://github.com/nuromirzak/sharing-codes/issues">Request Feature</a>
+    <a href="https://github.com/coderSidharth/codedrop/issues">Request Feature</a>
   </p>
 </div>
 
@@ -77,9 +77,18 @@
 |--------------------------------------|------------------------------------|
 | ![Dell XPS 13][product-screenshot-1] | ![iPhone XR][product-screenshot-2] |
 
-There is a lot of collaboration in programming: many projects require sharing your code with other developers. Using
-open web resources such as Pastebin is not always an option. In this project, you will create your own secure version of
-a code-sharing platform.
+CodeDrop is a small, self-hosted place to create and share code snippets. Its dark, distraction-free editor keeps the focus on the code, while expiry and view limits give you control over how long a snippet remains available.
+
+### Features
+
+* Create snippets and share them with a direct link.
+* Set a password for private snippets.
+* Expire snippets after a time limit or a chosen number of views.
+* Track character and line counts while writing; clear the editor in one click.
+* Generate passwords and copy the share link from the editor.
+* Browse recent public snippets.
+
+The interface is responsive and uses a minimal dark theme across the editor, snippet, and browse pages.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -126,32 +135,32 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Project Link: [https://github.com/nuromirzak/sharing-codes](https://github.com/nuromirzak/sharing-codes)
+Project Link: [https://github.com/coderSidharth/codedrop](https://github.com/coderSidharth/codedrop)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/nuromirzak/sharing-codes.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/coderSidharth/codedrop.svg?style=for-the-badge
 
-[contributors-url]: https://github.com/nuromirzak/sharing-codes/graphs/contributors
+[contributors-url]: https://github.com/coderSidharth/codedrop/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/nuromirzak/sharing-codes.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/coderSidharth/codedrop.svg?style=for-the-badge
 
-[forks-url]: https://github.com/nuromirzak/sharing-codes/network/members
+[forks-url]: https://github.com/coderSidharth/codedrop/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/nuromirzak/sharing-codes.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/coderSidharth/codedrop.svg?style=for-the-badge
 
-[stars-url]: https://github.com/nuromirzak/sharing-codes/stargazers
+[stars-url]: https://github.com/coderSidharth/codedrop/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/nuromirzak/sharing-codes.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/coderSidharth/codedrop.svg?style=for-the-badge
 
-[issues-url]: https://github.com/nuromirzak/sharing-codes/issues
+[issues-url]: https://github.com/coderSidharth/codedrop/issues
 
-[license-shield]: https://img.shields.io/github/license/nuromirzak/sharing-codes.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/coderSidharth/codedrop.svg?style=for-the-badge
 
-[license-url]: https://github.com/nuromirzak/sharing-codes/blob/master/LICENSE
+[license-url]: https://github.com/coderSidharth/codedrop/blob/master/LICENSE
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 
