@@ -36,7 +36,7 @@
 <h3 align="center">CodeDrop · a clean, minimal code sharing platform</h3>
 
   <p align="center">
-    Code Sharing Platform is a graduate project for track Java Backend Developer. 
+    A simple place to create, protect, and share code snippets.
     <br />
     <a href="https://github.com/coderSidharth/codedrop"><strong>Explore the docs »</strong></a>
     <br />
@@ -73,9 +73,9 @@
 
 ## About The Project
 
-| Desktop version                      | Mobile version                     |
-|--------------------------------------|------------------------------------|
-| ![Dell XPS 13][product-screenshot-1] | ![iPhone XR][product-screenshot-2] |
+| CodeDrop editor | Shared snippet |
+|---|---|
+| ![CodeDrop editor][product-screenshot-1] | ![CodeDrop snippet page][product-screenshot-2] |
 
 CodeDrop is a small, self-hosted place to create and share code snippets. Its dark, distraction-free editor keeps the focus on the code, while expiry and view limits give you control over how long a snippet remains available.
 
@@ -166,6 +166,6 @@ Project Link: [https://github.com/coderSidharth/codedrop](https://github.com/cod
 
 [linkedin-url]: https://linkedin.com/in/nurmukhammed
 
-[product-screenshot-1]: readme-images/dell-xps13.png
+[product-screenshot-1]: readme-images/codedrop-editor.png
 
-[product-screenshot-2]: readme-images/iphone-xr.png
+[product-screenshot-2]: readme-images/codedrop-snippet.png
